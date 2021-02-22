@@ -1,0 +1,100 @@
+\hypertarget{class_resource_manager}{}\doxysection{Resource\+Manager Class Reference}
+\label{class_resource_manager}\index{ResourceManager@{ResourceManager}}
+
+
+This is a resource manager, which is singleton, to manage the bricks creation.  
+
+
+
+
+{\ttfamily \#include $<$Resource\+Manager.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_resource_manager_aeb11651a0a0d77189cf8195e240b88f6}{init}} (std\+::string filename, SDL\+\_\+\+Renderer $\ast$ren)
+\begin{DoxyCompactList}\small\item\em $<$This function sets the image the component on to the screen.$>$ \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{class_resource_manager_a4da4df01c3560faa79113a8a75820b66}{get\+Texture}} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em $<$\+This function returns the brick component of the image based on the filepath$>$ \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_resource_manager_a53bf358b029e050a285725bc70a8550a}{start\+Up}} ()
+\begin{DoxyCompactList}\small\item\em $<$\+This function sets up the resource manager$>$ \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_resource_manager_ac944ab49c79049e99e169e932446520c}{shutdown}} ()
+\begin{DoxyCompactList}\small\item\em $<$\+Calls the private Destructor$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} \& \mbox{\hyperlink{class_resource_manager_a8fd3155e6658c0bdc3b3f6f81443e374}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em $<$This function creates the singleton object.$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a resource manager, which is singleton, to manage the bricks creation. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_resource_manager_a8fd3155e6658c0bdc3b3f6f81443e374}\label{class_resource_manager_a8fd3155e6658c0bdc3b3f6f81443e374}} 
+\index{ResourceManager@{ResourceManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}\& Resource\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+$<$This function creates the singleton object.$>$ 
+
+$<$\+This function helps to create an object which is singleton$>$ \mbox{\Hypertarget{class_resource_manager_a4da4df01c3560faa79113a8a75820b66}\label{class_resource_manager_a4da4df01c3560faa79113a8a75820b66}} 
+\index{ResourceManager@{ResourceManager}!getTexture@{getTexture}}
+\index{getTexture@{getTexture}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getTexture()}{getTexture()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ Resource\+Manager\+::get\+Texture (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+$<$\+This function returns the brick component of the image based on the filepath$>$ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em $<$filename$>$} & $<$filepath of the image$>$\\
+\hline
+\end{DoxyParams}
+$<$Returns the texture based on the image.$>$ \mbox{\Hypertarget{class_resource_manager_aeb11651a0a0d77189cf8195e240b88f6}\label{class_resource_manager_aeb11651a0a0d77189cf8195e240b88f6}} 
+\index{ResourceManager@{ResourceManager}!init@{init}}
+\index{init@{init}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Resource\+Manager\+::init (\begin{DoxyParamCaption}\item[{std\+::string}]{filename,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})}
+
+
+
+$<$This function sets the image the component on to the screen.$>$ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em $<$filename$>$} & $<$filepath of the image$>$ \\
+\hline
+\mbox{\texttt{ in}}  & {\em $<$ren$>$} & $<$renderer of the the brick sprite$>$\\
+\hline
+\end{DoxyParams}
+$<$\+Renders the texture of the sprite and stores in the map$>$ \mbox{\Hypertarget{class_resource_manager_ac944ab49c79049e99e169e932446520c}\label{class_resource_manager_ac944ab49c79049e99e169e932446520c}} 
+\index{ResourceManager@{ResourceManager}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily int Resource\+Manager\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+$<$\+Calls the private Destructor$>$ 
+
+$<$\+Private Destructor$>$ \mbox{\Hypertarget{class_resource_manager_a53bf358b029e050a285725bc70a8550a}\label{class_resource_manager_a53bf358b029e050a285725bc70a8550a}} 
+\index{ResourceManager@{ResourceManager}!startUp@{startUp}}
+\index{startUp@{startUp}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{startUp()}{startUp()}}
+{\footnotesize\ttfamily int Resource\+Manager\+::start\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+$<$\+This function sets up the resource manager$>$ 
+
+$<$\+Sets up$>$ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Resource\+Manager.\+hpp\end{DoxyCompactItemize}

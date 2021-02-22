@@ -1,0 +1,140 @@
+\hypertarget{class_brick}{}\doxysection{Brick Class Reference}
+\label{class_brick}\index{Brick@{Brick}}
+
+
+Class to store the ball attributes and behavior.  
+
+
+
+
+{\ttfamily \#include $<$Brick.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_brick_a2a1eee0b9dbb3f3d7043806d21041e24}{init}} (int life, SDL\+\_\+\+Renderer $\ast$render, int color)
+\begin{DoxyCompactList}\small\item\em $<$\+This is the function to initialize the bricks$>$ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_brick_a8914920af4598b00f431ff67c1ca4939}{Draw}} (SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em $<$This function draws the component on to the screen.$>$ \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_brick_ab4162864974aedff0bcde3195f9b2669}{hits\+Remaining}} ()
+\begin{DoxyCompactList}\small\item\em $<$This function returns the remaining hits possible on the brick.$>$ \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_brick_ad9c4d23799dccd75c71f8a494d08e84b}{Life\+Val}} ()
+\begin{DoxyCompactList}\small\item\em $<$This function returns the life of the brick.$>$ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_brick_a5aa6ac11bd96c0f67109e9a21e387600}{reduce\+Hits}} ()
+\begin{DoxyCompactList}\small\item\em $<$This function reduces the hits of the brick.$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_brick_aa29d678c3d901c7b18cbc3a27a51be17}{Brick}} ()
+\begin{DoxyCompactList}\small\item\em $<$The default constructor of the brick.$>$ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_brick_a0044f18c6b1c2467b1612be0ddf43fb2}{Update}} (int i)
+\begin{DoxyCompactList}\small\item\em $<$\+Updates the bricks position$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vec2}{Vec2}} \mbox{\hyperlink{class_brick_add82fe0712423796d36d9e392e4775f8}{position}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to store the ball attributes and behavior. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_brick_aa29d678c3d901c7b18cbc3a27a51be17}\label{class_brick_aa29d678c3d901c7b18cbc3a27a51be17}} 
+\index{Brick@{Brick}!Brick@{Brick}}
+\index{Brick@{Brick}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{Brick()}{Brick()}}
+{\footnotesize\ttfamily Brick\+::\+Brick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+$<$The default constructor of the brick.$>$ 
+
+$<$ default constructor $>$ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_brick_a8914920af4598b00f431ff67c1ca4939}\label{class_brick_a8914920af4598b00f431ff67c1ca4939}} 
+\index{Brick@{Brick}!Draw@{Draw}}
+\index{Draw@{Draw}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Brick\+::\+Draw (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+$<$This function draws the component on to the screen.$>$ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em $<$renderer$>$} & $<$renderer object from the main screen to help draw the ball$>$\\
+\hline
+\end{DoxyParams}
+$<$\+Draws the brick component on the screen$>$ \mbox{\Hypertarget{class_brick_ab4162864974aedff0bcde3195f9b2669}\label{class_brick_ab4162864974aedff0bcde3195f9b2669}} 
+\index{Brick@{Brick}!hitsRemaining@{hitsRemaining}}
+\index{hitsRemaining@{hitsRemaining}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{hitsRemaining()}{hitsRemaining()}}
+{\footnotesize\ttfamily int Brick\+::hits\+Remaining (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+$<$This function returns the remaining hits possible on the brick.$>$ 
+
+$<$ returns the remaining hits possible on the brick.$>$ \mbox{\Hypertarget{class_brick_a2a1eee0b9dbb3f3d7043806d21041e24}\label{class_brick_a2a1eee0b9dbb3f3d7043806d21041e24}} 
+\index{Brick@{Brick}!init@{init}}
+\index{init@{init}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Brick\+::init (\begin{DoxyParamCaption}\item[{int}]{life,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{render,  }\item[{int}]{color }\end{DoxyParamCaption})}
+
+
+
+$<$\+This is the function to initialize the bricks$>$ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em $<$life$>$} & $<$\+Life of the brick$>$ \\
+\hline
+\mbox{\texttt{ in}}  & {\em $<$render$>$} & $<$the screen to render the bricks to..$>$ \\
+\hline
+\mbox{\texttt{ in}}  & {\em $<$color$>$} & $<$color of the brick spirte$>$\\
+\hline
+\end{DoxyParams}
+$<$\+Sets up the bricks on the screen$>$ \mbox{\Hypertarget{class_brick_ad9c4d23799dccd75c71f8a494d08e84b}\label{class_brick_ad9c4d23799dccd75c71f8a494d08e84b}} 
+\index{Brick@{Brick}!LifeVal@{LifeVal}}
+\index{LifeVal@{LifeVal}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{LifeVal()}{LifeVal()}}
+{\footnotesize\ttfamily int Brick\+::\+Life\+Val (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+$<$This function returns the life of the brick.$>$ 
+
+$<$ returns the life of the brick..$>$ \mbox{\Hypertarget{class_brick_a5aa6ac11bd96c0f67109e9a21e387600}\label{class_brick_a5aa6ac11bd96c0f67109e9a21e387600}} 
+\index{Brick@{Brick}!reduceHits@{reduceHits}}
+\index{reduceHits@{reduceHits}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{reduceHits()}{reduceHits()}}
+{\footnotesize\ttfamily void Brick\+::reduce\+Hits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+$<$This function reduces the hits of the brick.$>$ 
+
+$<$ reduces the hits of the brick..$>$ \mbox{\Hypertarget{class_brick_a0044f18c6b1c2467b1612be0ddf43fb2}\label{class_brick_a0044f18c6b1c2467b1612be0ddf43fb2}} 
+\index{Brick@{Brick}!Update@{Update}}
+\index{Update@{Update}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Brick\+::\+Update (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+$<$\+Updates the bricks position$>$ 
+
+$<$ brick positioning calculator $>$ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_brick_add82fe0712423796d36d9e392e4775f8}\label{class_brick_add82fe0712423796d36d9e392e4775f8}} 
+\index{Brick@{Brick}!position@{position}}
+\index{position@{position}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vec2}{Vec2}} Brick\+::position}
+
+Position of the brick 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Brick.\+h\end{DoxyCompactItemize}

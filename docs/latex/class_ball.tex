@@ -1,0 +1,176 @@
+\hypertarget{class_ball}{}\doxysection{Ball Class Reference}
+\label{class_ball}\index{Ball@{Ball}}
+
+
+Class to store the ball attributes and behavior.  
+
+
+
+
+{\ttfamily \#include $<$Ball.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ball_a2b2455c2745a9b75b105c6f1c68a84fd}{Ball}} (\mbox{\hyperlink{class_vec2}{Vec2}} \mbox{\hyperlink{class_ball_a58accf7a62feea1030eaa3569322ca4e}{position}}, \mbox{\hyperlink{class_vec2}{Vec2}} \mbox{\hyperlink{class_ball_ab5da7c8a1d90ecfb433a917071d38bd7}{velocity}}, SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em $<$This is the constructor which requires the postion, initial velocity and the renderer object$>$ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_ab16d8f8c98ddd13ed0350d40cf8e104e}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em $<$This function resets the ball to initial position.$>$ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a9ed7455edf94a25227ba6b4db451770f}{Draw}} (SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em $<$This function draws the component on to the screen.$>$ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a791a8547e5a882d05c1acc4cbfcee86b}{Update}} (float dt)
+\begin{DoxyCompactList}\small\item\em $<$\+This function updates the positon of the ball through out the game$>$ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a314edd8c6ce2dea9de8c070f644b642f}{Collide\+With\+Paddle}} (\mbox{\hyperlink{struct_contact}{Contact}} const \&contact)
+\begin{DoxyCompactList}\small\item\em $<$\+This function is called when the ball collides with the paddle$>$ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a70eade4163d793db2ddcb7234977cac6}{Collide\+With\+Brick}} (\mbox{\hyperlink{struct_contact}{Contact}} const \&contact)
+\begin{DoxyCompactList}\small\item\em $<$\+This function is called when the ball collides with the Brick$>$ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a4fdd3e7d96598ab03b53bc3def54ab39}{Collide\+With\+Wall}} (\mbox{\hyperlink{struct_contact}{Contact}} const \&contact, int width, int height)
+\begin{DoxyCompactList}\small\item\em $<$\+This function is called when the ball collides with the Wall$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vec2}{Vec2}} \mbox{\hyperlink{class_ball_a58accf7a62feea1030eaa3569322ca4e}{position}}
+\item 
+\mbox{\hyperlink{class_vec2}{Vec2}} \mbox{\hyperlink{class_ball_ab5da7c8a1d90ecfb433a917071d38bd7}{velocity}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{class_ball_ad4f294b00d5bab91244f192e01b3082f}{rect}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to store the ball attributes and behavior. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ball_a2b2455c2745a9b75b105c6f1c68a84fd}\label{class_ball_a2b2455c2745a9b75b105c6f1c68a84fd}} 
+\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Ball()}{Ball()}}
+{\footnotesize\ttfamily Ball\+::\+Ball (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec2}{Vec2}}}]{position,  }\item[{\mbox{\hyperlink{class_vec2}{Vec2}}}]{velocity,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+$<$This is the constructor which requires the postion, initial velocity and the renderer object$>$ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em $<$postion$>$} & $<$position of the Ball$>$ \\
+\hline
+\mbox{\texttt{ in}}  & {\em $<$velocity$>$} & $<$velocity of the Ball$>$ \\
+\hline
+\mbox{\texttt{ in}}  & {\em $<$ren$>$} & $<$renderer of the Ball$>$\\
+\hline
+\end{DoxyParams}
+$<$\+Sets up the Ball$>$ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ball_a70eade4163d793db2ddcb7234977cac6}\label{class_ball_a70eade4163d793db2ddcb7234977cac6}} 
+\index{Ball@{Ball}!CollideWithBrick@{CollideWithBrick}}
+\index{CollideWithBrick@{CollideWithBrick}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{CollideWithBrick()}{CollideWithBrick()}}
+{\footnotesize\ttfamily void Ball\+::\+Collide\+With\+Brick (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_contact}{Contact}} const \&}]{contact }\end{DoxyParamCaption})}
+
+
+
+$<$\+This function is called when the ball collides with the Brick$>$ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em $<$contact$>$} & $<$To detect which part of the brick has the ball been hit on.$>$\\
+\hline
+\end{DoxyParams}
+$<$\+Changes the direction and the speed of the ball when it collides with the brick on a given region$>$ \mbox{\Hypertarget{class_ball_a314edd8c6ce2dea9de8c070f644b642f}\label{class_ball_a314edd8c6ce2dea9de8c070f644b642f}} 
+\index{Ball@{Ball}!CollideWithPaddle@{CollideWithPaddle}}
+\index{CollideWithPaddle@{CollideWithPaddle}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{CollideWithPaddle()}{CollideWithPaddle()}}
+{\footnotesize\ttfamily void Ball\+::\+Collide\+With\+Paddle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_contact}{Contact}} const \&}]{contact }\end{DoxyParamCaption})}
+
+
+
+$<$\+This function is called when the ball collides with the paddle$>$ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em $<$contact$>$} & $<$To detect which part of the paddle has the ball been hit on.$>$\\
+\hline
+\end{DoxyParams}
+$<$\+Changes the direction and the speed of the ball when it collides with the paddle on a given region$>$ \mbox{\Hypertarget{class_ball_a4fdd3e7d96598ab03b53bc3def54ab39}\label{class_ball_a4fdd3e7d96598ab03b53bc3def54ab39}} 
+\index{Ball@{Ball}!CollideWithWall@{CollideWithWall}}
+\index{CollideWithWall@{CollideWithWall}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{CollideWithWall()}{CollideWithWall()}}
+{\footnotesize\ttfamily void Ball\+::\+Collide\+With\+Wall (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_contact}{Contact}} const \&}]{contact,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+$<$\+This function is called when the ball collides with the Wall$>$ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em $<$contact$>$} & $<$To detect which part of the wall has the ball been hit on.$>$\\
+\hline
+\end{DoxyParams}
+$<$\+Changes the direction and the speed of the ball when it collides with the wall on a given region$>$ \mbox{\Hypertarget{class_ball_a9ed7455edf94a25227ba6b4db451770f}\label{class_ball_a9ed7455edf94a25227ba6b4db451770f}} 
+\index{Ball@{Ball}!Draw@{Draw}}
+\index{Draw@{Draw}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Ball\+::\+Draw (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+$<$This function draws the component on to the screen.$>$ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em $<$renderer$>$} & $<$renderer object from the main screen to help draw the ball$>$\\
+\hline
+\end{DoxyParams}
+$<$\+Draws the ball component on the screen$>$ \mbox{\Hypertarget{class_ball_ab16d8f8c98ddd13ed0350d40cf8e104e}\label{class_ball_ab16d8f8c98ddd13ed0350d40cf8e104e}} 
+\index{Ball@{Ball}!Reset@{Reset}}
+\index{Reset@{Reset}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Ball\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+$<$This function resets the ball to initial position.$>$ 
+
+$<$resets the velocity and positon of the ball$>$ \mbox{\Hypertarget{class_ball_a791a8547e5a882d05c1acc4cbfcee86b}\label{class_ball_a791a8547e5a882d05c1acc4cbfcee86b}} 
+\index{Ball@{Ball}!Update@{Update}}
+\index{Update@{Update}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Ball\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})}
+
+
+
+$<$\+This function updates the positon of the ball through out the game$>$ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em $<$dt$>$} & $<$The change in the ball component is influenced by dt. (delta)$>$\\
+\hline
+\end{DoxyParams}
+$<$\+Update the ball throught the program$>$ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ball_a58accf7a62feea1030eaa3569322ca4e}\label{class_ball_a58accf7a62feea1030eaa3569322ca4e}} 
+\index{Ball@{Ball}!position@{position}}
+\index{position@{position}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vec2}{Vec2}} Ball\+::position}
+
+Position of the paddle \mbox{\Hypertarget{class_ball_ad4f294b00d5bab91244f192e01b3082f}\label{class_ball_ad4f294b00d5bab91244f192e01b3082f}} 
+\index{Ball@{Ball}!rect@{rect}}
+\index{rect@{rect}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Ball\+::rect \{\}}
+
+Rectangle component of the paddle which embeds the sprites \mbox{\Hypertarget{class_ball_ab5da7c8a1d90ecfb433a917071d38bd7}\label{class_ball_ab5da7c8a1d90ecfb433a917071d38bd7}} 
+\index{Ball@{Ball}!velocity@{velocity}}
+\index{velocity@{velocity}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vec2}{Vec2}} Ball\+::velocity}
+
+Velocity of the paddle 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Ball.\+h\end{DoxyCompactItemize}

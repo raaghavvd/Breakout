@@ -1,0 +1,165 @@
+\hypertarget{class_player_score}{}\doxysection{Player\+Score Class Reference}
+\label{class_player_score}\index{PlayerScore@{PlayerScore}}
+
+
+Class to store the screen rendering of scores and lives.  
+
+
+
+
+{\ttfamily \#include $<$Player\+Score.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_score_a464e536f8ed931d91f3e93a782c610bd}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em $<$This function draws the component on to the screen.$>$ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_score_a7ad6d31006536d1241611325b19865a4}{Draw\+Img}} ()
+\begin{DoxyCompactList}\small\item\em $<$This function draws the image on to the screen.$>$ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_score_aa3e23594faccc9c98e5f28919a627719}{set\+Image}} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em $<$This function sets the image the component on to the screen.$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_score_a63020ebe7f4858e8cbb36b6a3af97594}{Player\+Score}} (\mbox{\hyperlink{class_vec2}{Vec2}} position, SDL\+\_\+\+Renderer $\ast$renderer, TTF\+\_\+\+Font $\ast$font)
+\begin{DoxyCompactList}\small\item\em $<$This is the constructor which requires the postion,renderer object and the font.$>$ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_score_aa88b17d890af0f3f4642d6fa36ca5b9a}{Set\+Score}} (int score)
+\begin{DoxyCompactList}\small\item\em $<$\+This function sets the score to be displayed$>$ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_score_af8782cf249d389d21326e029845850ea}{Set\+Level\+Message}} (std\+::string string\+Message, int score)
+\begin{DoxyCompactList}\small\item\em $<$This function draws the level text on to the screen.$>$ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_score_afba0d0487ceeaf8bc3925b3ed79dab59}{Display\+Message}} (std\+::string str)
+\begin{DoxyCompactList}\small\item\em $<$This function displays the level text on to the screen.$>$ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_score_a807e1ae6a7310e86e498e57e38936e0d}{Reset\+Score}} ()
+\begin{DoxyCompactList}\small\item\em $<$This function displays the resets text on to the screen.$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_score_a67b8bd718adf6ca558a869f4708764a9}{$\sim$\+Player\+Score}} ()
+\begin{DoxyCompactList}\small\item\em $<$Destructor.$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to store the screen rendering of scores and lives. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_player_score_a63020ebe7f4858e8cbb36b6a3af97594}\label{class_player_score_a63020ebe7f4858e8cbb36b6a3af97594}} 
+\index{PlayerScore@{PlayerScore}!PlayerScore@{PlayerScore}}
+\index{PlayerScore@{PlayerScore}!PlayerScore@{PlayerScore}}
+\doxysubsubsection{\texorpdfstring{PlayerScore()}{PlayerScore()}}
+{\footnotesize\ttfamily Player\+Score\+::\+Player\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec2}{Vec2}}}]{position,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{TTF\+\_\+\+Font $\ast$}]{font }\end{DoxyParamCaption})}
+
+
+
+$<$This is the constructor which requires the postion,renderer object and the font.$>$ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em $<$postion$>$} & $<$position of the Text$>$ \\
+\hline
+\mbox{\texttt{ in}}  & {\em $<$ren$>$} & $<$renderer of the text$>$ \\
+\hline
+\mbox{\texttt{ in}}  & {\em $<$font$>$} & $<$font of the text$>$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$It\textquotesingle{}s a constructor, so it doesnt return anything.$>$
+\end{DoxyReturn}
+$<$\+Sets up the Player\+Score$>$ \mbox{\Hypertarget{class_player_score_a67b8bd718adf6ca558a869f4708764a9}\label{class_player_score_a67b8bd718adf6ca558a869f4708764a9}} 
+\index{PlayerScore@{PlayerScore}!````~PlayerScore@{$\sim$PlayerScore}}
+\index{````~PlayerScore@{$\sim$PlayerScore}!PlayerScore@{PlayerScore}}
+\doxysubsubsection{\texorpdfstring{$\sim$PlayerScore()}{~PlayerScore()}}
+{\footnotesize\ttfamily Player\+Score\+::$\sim$\+Player\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+$<$Destructor.$>$ 
+
+$<$\+Destructor$>$ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_score_afba0d0487ceeaf8bc3925b3ed79dab59}\label{class_player_score_afba0d0487ceeaf8bc3925b3ed79dab59}} 
+\index{PlayerScore@{PlayerScore}!DisplayMessage@{DisplayMessage}}
+\index{DisplayMessage@{DisplayMessage}!PlayerScore@{PlayerScore}}
+\doxysubsubsection{\texorpdfstring{DisplayMessage()}{DisplayMessage()}}
+{\footnotesize\ttfamily void Player\+Score\+::\+Display\+Message (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
+
+
+
+$<$This function displays the level text on to the screen.$>$ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em $<$str$>$} & $<$message to write on the screen$>$\\
+\hline
+\end{DoxyParams}
+$<$\+Draws the text component on the screen$>$ \mbox{\Hypertarget{class_player_score_a464e536f8ed931d91f3e93a782c610bd}\label{class_player_score_a464e536f8ed931d91f3e93a782c610bd}} 
+\index{PlayerScore@{PlayerScore}!Draw@{Draw}}
+\index{Draw@{Draw}!PlayerScore@{PlayerScore}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Player\+Score\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+$<$This function draws the component on to the screen.$>$ 
+
+$<$\+Draws the image component on the screen$>$ \mbox{\Hypertarget{class_player_score_a7ad6d31006536d1241611325b19865a4}\label{class_player_score_a7ad6d31006536d1241611325b19865a4}} 
+\index{PlayerScore@{PlayerScore}!DrawImg@{DrawImg}}
+\index{DrawImg@{DrawImg}!PlayerScore@{PlayerScore}}
+\doxysubsubsection{\texorpdfstring{DrawImg()}{DrawImg()}}
+{\footnotesize\ttfamily void Player\+Score\+::\+Draw\+Img (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+$<$This function draws the image on to the screen.$>$ 
+
+$<$\+Draws the image component on the screen$>$ \mbox{\Hypertarget{class_player_score_a807e1ae6a7310e86e498e57e38936e0d}\label{class_player_score_a807e1ae6a7310e86e498e57e38936e0d}} 
+\index{PlayerScore@{PlayerScore}!ResetScore@{ResetScore}}
+\index{ResetScore@{ResetScore}!PlayerScore@{PlayerScore}}
+\doxysubsubsection{\texorpdfstring{ResetScore()}{ResetScore()}}
+{\footnotesize\ttfamily void Player\+Score\+::\+Reset\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+$<$This function displays the resets text on to the screen.$>$ 
+
+$<$resets the message$>$ \mbox{\Hypertarget{class_player_score_aa3e23594faccc9c98e5f28919a627719}\label{class_player_score_aa3e23594faccc9c98e5f28919a627719}} 
+\index{PlayerScore@{PlayerScore}!setImage@{setImage}}
+\index{setImage@{setImage}!PlayerScore@{PlayerScore}}
+\doxysubsubsection{\texorpdfstring{setImage()}{setImage()}}
+{\footnotesize\ttfamily void Player\+Score\+::set\+Image (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+$<$This function sets the image the component on to the screen.$>$ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em $<$filename$>$} & $<$filepath of the image$>$\\
+\hline
+\end{DoxyParams}
+$<$\+Draws the text component on the screen$>$ \mbox{\Hypertarget{class_player_score_af8782cf249d389d21326e029845850ea}\label{class_player_score_af8782cf249d389d21326e029845850ea}} 
+\index{PlayerScore@{PlayerScore}!SetLevelMessage@{SetLevelMessage}}
+\index{SetLevelMessage@{SetLevelMessage}!PlayerScore@{PlayerScore}}
+\doxysubsubsection{\texorpdfstring{SetLevelMessage()}{SetLevelMessage()}}
+{\footnotesize\ttfamily void Player\+Score\+::\+Set\+Level\+Message (\begin{DoxyParamCaption}\item[{std\+::string}]{string\+Message,  }\item[{int}]{score }\end{DoxyParamCaption})}
+
+
+
+$<$This function draws the level text on to the screen.$>$ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em $<$string\+Message$>$} & $<$message to write on the screen$>$ \\
+\hline
+\mbox{\texttt{ in}}  & {\em $<$score$>$} & $<$score of the user$>$\\
+\hline
+\end{DoxyParams}
+$<$\+Draws the text component on the screen$>$ \mbox{\Hypertarget{class_player_score_aa88b17d890af0f3f4642d6fa36ca5b9a}\label{class_player_score_aa88b17d890af0f3f4642d6fa36ca5b9a}} 
+\index{PlayerScore@{PlayerScore}!SetScore@{SetScore}}
+\index{SetScore@{SetScore}!PlayerScore@{PlayerScore}}
+\doxysubsubsection{\texorpdfstring{SetScore()}{SetScore()}}
+{\footnotesize\ttfamily void Player\+Score\+::\+Set\+Score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})}
+
+
+
+$<$\+This function sets the score to be displayed$>$ 
+
+$<$ function returns the sets the score to be displayed$>$ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Player\+Score.\+h\end{DoxyCompactItemize}
